@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premium CX Car Services</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      z-index: 1;
+      letter-spacing: 3px;
+      margin-bottom: 0.5rem;
+      margin-top: 13%;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    header .btn-primary {
+      margin-top: 30px;
+      padding: 15px 40px;
+      background: #ff6161;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+      transition: background 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    header .btn-primary:hover {
+      background: #fc0000;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section.service-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 80px;
+      flex-wrap: wrap;
+    }
+
+    section.service-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    section.service-section img {
+      flex: 1 1 400px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    section.service-content {
+      flex: 1 1 450px;
+    }
+
+    section.service-content h2 {
+      font-size: 2rem;
+      color: #ff6f61;
+      margin-bottom: 15px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    section.service-content p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6f61;
+    }
+
+    @media (max-width: 768px) {
+      section.service-section {
+        flex-direction: column !important;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Car Service and Mechanic</h1>
+    <p>Delivering Premium Customer Experience Solutions for the Automotive Industry</p>
+    <button class="btn-primary" id="contactBtn">Contact Us</button>
+  </header>
+
+  <main>
+    <section class="service-section" aria-label="Customer Journey Mapping">
+      <img src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=" alt="Customer journey mapping in car service" />
+      <div class="service-content">
+        <h2>Premium Engine Service for Peak Performance</h2>
+        <p>Keep your vehicle running like new with our expert engine service. From diagnostics to complete overhauls, our skilled technicians use advanced tools and genuine parts to ensure maximum power, efficiency, and reliability. Trust us to boost your engine’s life and performance — because your drive deserves the best.</p>
+      </div>
+    </section>
+
+    <section class="service-section" aria-label="Omnichannel Support">
+      <img src="https://media.istockphoto.com/id/466557299/photo/booster-cables.jpg?s=612x612&w=0&k=20&c=pnoXBa7YnKK9KtL2jlF3Wd69FkF_z3HYIQ_H5vlh1y4=" alt="Omnichannel support for car services" />
+      <div class="service-content">
+        <h2>24/7 Engine Jumpstart Service – Fast, Safe & Affordable</h2>
+        <p>Battery dead? Don’t worry — we’ve got your back anytime, anywhere! Our expert jumpstart service is available 24/7 to get your vehicle running in no time. Whether you're stuck at home, at work, or on the roadside, our team will reach you quickly with the right tools for a safe and damage-free jumpstart. Affordable rates, quick response, and local coverage make us the first choice when your engine won’t start.</p>
+      </div>
+    </section>
+
+    <section class="service-section" aria-label="CX Strategy Consulting">
+      <img src="https://www.wyotech.edu/wp-content/uploads/2024/04/how-to-change-your-car-oil-featured-image.jpeg" alt="Consulting for CX strategy in car services" />
+      <div class="service-content">
+        <h2>Professional Oil Change Service for a Smoother Ride</h2>
+        <p>Keep your engine healthy and running smoothly with our expert oil change service. We use high-quality engine oil and filters to enhance performance, improve fuel efficiency, and extend your vehicle’s life. Our technicians ensure a quick, clean, and professional service — all at an affordable price.</p>
+      </div>
+    </section>
+
+    <section class="service-section" aria-label="Customer Feedback Analysis">
+      <img src="https://carchalak.com/wp-content/uploads/2023/01/24-hour-services-1.jpg" alt="Customer feedback analysis in car services" />
+      <div class="service-content">
+        <h2>24/7 Car Care Services – Anytime, Anywhere</h2>
+        <p>Car trouble can strike anytime — and we’re always ready to respond! We offer 24/7 vehicle services across Karnataka, including engine repair, jumpstart assistance, professional oil changes, and more . . . delivered right to your location. Whether you're at home, office, or stranded roadside, our expert team reaches you quickly with reliable, affordable service. No matter where you are in Karnataka, your car care is just a call away!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Contact us today to elevate your automotive customer experience to the next level.</p>
+    <p>Email: <a href="mailto:car.service.byy@gmail.com">car.service.byy@gmail.com</a> | Phone: +91 9535572215</p>
+    <p>&copy; 2024 Car Service and Mechanic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactBtn').addEventListener('click', function() {
+      window.location.href = 'tel:+919535572215';
+    });
+  </script>
+</body>
+</html>
